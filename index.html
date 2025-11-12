@@ -18,20 +18,34 @@
   <main>
     <h1>NYC Landmarks Virtual Tour</h1>
     <p class="intro">This site highlights some interesting landmarks across New York City's five boroughs.</p>
+    <div class="videoWrapper ratio-16-9 ">
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/_xkg7pNSp9M?si=9eCKjLLdpizR7rvJ"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </div>
+    <div class="videoWrapper ratio-16-9">
+    <iframe width=" 560" height="315" src="https://www.youtube.com/embed/8jrtg1jNnNs?si=PKbM5i7MnS1e5Ff-"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <h2>Featured Landmark</h2>
+    <!-- Featured image using <picture> -->
+    <picture>
+      <!-- Large screens (desktop/tablet) -->
+      <source media="(min-width: 645px)" srcset="images/pexels-kelsey-caroline-774981359-19122990.jpg">
+
+      <!-- Small screens (mobile) -->
+      <source media="(max-width: 644px)" srcset="images/JPEG/images/pexels-kelsey-caroline-774981359-19122990.jpg">
+
+      <!-- Fallback image -->
+      <img src="images/pexels-kelsey-caroline-774981359-19122990.jpg" alt="Wonder Wheel ferris Wheel at Coney Island">
+    </picture>
     <div class="landmarks-grid">
-
-      <h2>Featured Landmark</h2>
-      <!-- Featured image using <picture> -->
-      <picture>
-        <!-- Large screens (desktop/tablet) -->
-        <source media="(min-width: 645px)" srcset="images/pexels-kelsey-caroline-774981359-19122990.jpg">
-
-        <!-- Small screens (mobile) -->
-        <source media="(max-width: 644px)" srcset="images/JPEG/images/pexels-kelsey-caroline-774981359-19122990.jpg">
-
-        <!-- Fallback image -->
-        <img src="images/pexels-kelsey-caroline-774981359-19122990.jpg" alt="Wonder Wheel ferris Wheel at Coney Island">
-      </picture>
 
       <figure>
         <img src="images/JPEG/pexels-kelsey-caroline-774981359-19122990.jpg"
