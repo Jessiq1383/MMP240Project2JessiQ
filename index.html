@@ -12,12 +12,14 @@
 
 
   <header>
-    <div class="site-title">NYC Landmarks</div>
+    
   </header>
 
   <main>
-    <h1>NYC Landmarks Virtual Tour</h1>
+  <div class="intro-container"> 
+    <div class="site-title">NYC Landmarks Virtual Tour</div>
     <p class="intro">This site highlights some interesting landmarks across New York City's five boroughs.</p>
+    </div>
     <div class="videoWrapper ratio-16-9 ">
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/_xkg7pNSp9M?si=9eCKjLLdpizR7rvJ"
@@ -27,12 +29,13 @@
 
     </div>
     <div class="videoWrapper ratio-16-9">
-    <iframe width=" 560" height="315" src="https://www.youtube.com/embed/8jrtg1jNnNs?si=PKbM5i7MnS1e5Ff-"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width=" 560" height="315" src="https://www.youtube.com/embed/8jrtg1jNnNs?si=PKbM5i7MnS1e5Ff-"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
+    <div class="featured-landmark">  
     <h2>Featured Landmark</h2>
     <!-- Featured image using <picture> -->
     <picture>
@@ -45,47 +48,79 @@
       <!-- Fallback image -->
       <img src="images/pexels-kelsey-caroline-774981359-19122990.jpg" alt="Wonder Wheel ferris Wheel at Coney Island">
     </picture>
+    <p>The Wonder Wheel is the iconic ferris wheel at Deno’s Wonder Wheel Amusement Park in Coney Island, Brooklyn. Standing 150 feet tall, it has been a centerpiece of the boardwalk skyline since its debut in 1920.</p>
+  </div>
     <div class="landmarks-grid">
 
-      <figure>
+
+      <figure class="card">
+        <div class="card-image">
         <img src="images/JPEG/pexels-kelsey-caroline-774981359-19122990.jpg"
           alt="Wonder Wheel ferris wheel at Coney Island">
-        <figcaption> <a href="https://www.pexels.com/photo/ferris-wheel-in-amusement-park-19122990/">Photo by Kelsey
+          <p class="category">Brooklyn, NY</p>
+          </div>
+        <figcaption class="card-title"> <a
+            href="https://www.pexels.com/photo/ferris-wheel-in-amusement-park-19122990/">Photo by Kelsey
             Caroline</a></figcaption>
+            <p class="card-desc"> Wonder Sheel Ferries Wheel At Coney Island </p>
       </figure>
-      <figure>
+
+      </article>
+      
+      <figure class="card">
+        <div class="card-image">
         <img src="images/JPEG/pexels-mora-versio-2150673251-34091093.jpg" alt="Statue of Liberty">
-        <figcaption> <a href="https://www.pexels.com/photo/statue-of-liberty-during-golden-hour-34091093/">Photo by Mora
+        <p class="category">Liberty Island, NY</p>
+        </div>
+        <figcaption class="card-title">
+           <a href="https://www.pexels.com/photo/statue-of-liberty-during-golden-hour-34091093/">Photo by Mora
             Versio</a>
-        </figcaption>
+            <p class="card-desc"> Statue of Liberty </p>
+        </figcaption >
       </figure>
-      <figure>
-        <img src="images/JPEG/pexels-tracehudson-2424391.jpg"
-          alt="Empire State Building with lower Manhattan in the background">
-        <figcaption>
+      <figure class="card">
+        <div class="card-image">
+        <img src="images/JPEG/pexels-tracehudson-2424391.jpg"   alt="Empire State Building with lower Manhattan in the background">
+      <p class="category"> Manhattan, NY</p>
+      </div>
+        <figcaption class="card-title">
           <a href="https://www.pexels.com/photo/empire-state-building-during-golden-hour-2424391/">Photo by Trace
             hudson</a>
-        </figcaption>
+         <p class="card-desc"> Empire State Building with Lower Manhattan in the Background </p>
+          </figcaption>
       </figure>
 
-      <figure>
+      <figure  class="card">
+        <div class="card-image">
         <img src="images/JPEG/praswin-prakashan-YOCN1a1m_dg-unsplash.jpg"
           alt="Staten Island Ferry pulling into the dock">
-        <figcaption> <a href="https://unsplash.com/photos/YOCN1a1m_dg">Photo by Praswin Prakashan</a>
+          <p class="category"> Staten Island, NY</p>
+          </div>
+        <figcaption class="card-title"> <a href="https://unsplash.com/photos/YOCN1a1m_dg">Photo by Praswin Prakashan</a>
+          <p class="card-desc"> Staten Island Ferry Pulling into the Dock </p>
         </figcaption>
+     
 
       </figure>
-      <figure>
+      <figure class="card">
+        <div class="card-image">
         <img src="images/JPEG/pexels-malcolmhill-12360516.jpg" alt="Yankee Stadium">
-        <figcaption> <a href="https://www.pexels.com/photo/white-and-blue-concrete-building-12360516/">Photo by Malcolm
+        <p class="category"> The Bronx, NY</p>
+        </div>
+        <figcaption class="card-title"> <a href="https://www.pexels.com/photo/white-and-blue-concrete-building-12360516/">Photo by Malcolm
             Hill</a>
         </figcaption>
+        <p class="card-desc"> Yankee Stadium </p>
       </figure>
 
-      <figure>
+      <figure class="card">
+        <div class="card-image">
         <img src="images/JPEG/pexels-loquellano-12404963.jpg" alt="Roosevelt Island Tramway over the East River">
-        <figcaption>
+        <p class="category"> Queens, NY</p>
+      </div>
+        <figcaption class="card-title">
           <a href="https://www.pexels.com/photo/roosevelt-island-tramway-12404963/">Photo by Rapheal Loquellano</a>
+        <p class="card-desc"> Roosevelt Island Tramway over the East River </p>
         </figcaption>
       </figure>
 
